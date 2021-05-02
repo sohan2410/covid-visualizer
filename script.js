@@ -12,7 +12,7 @@ fetch(serverUrl).then(data => {
     array.forEach((ele) => {
         const card=document.createElement("div");
         card.classList.add("card");
-        card.innerHTML=`<div class="province">State</div><div class="stateName">${ele.Province}</div><div class="confirmed">Confirmed</div><div class="confirmedNumber">${ele.Confirmed}</div><div class="death">Death</div><div class="deathNumber">${ele.Deaths}</div><div class="active">Active</div><div class="activeNumber">${ele.Active}</div>`
+        card.innerHTML=`<div class="province">State</div><div class="stateName">${ele.Province}</div><div class="confirmed">Confirmed</div><div class="confirmedNumber">${ele.Confirmed}</div><div class="death">Death</div><div class="deathNumber">${ele.Deaths}</div><div class="active">Active</div><div class="activeNumber">${ele.Active}</div><div class="recovered">Recovered</div><div class="recoveredNumber">${ele.Recovered}</div>`;
         container.appendChild(card);
     });
     
